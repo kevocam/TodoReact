@@ -4,7 +4,7 @@ import './Modal.css'
 
 function Modal({ children }) {
     return ReactDOM.createPortal (
-        <div className="ModalBackground">
+        <div className="ModalBackground scale-in-right">
             {children}
         </div>,
            document.getElementById("modal")        

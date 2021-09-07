@@ -5,7 +5,7 @@ function TodoItem(props) {
 
    
     return (
-        <li className="TodoItem">
+        <li className="TodoItem flip-in-hor-bottom">
             <span className={`Ìcon Icon-check ${props.completed && 'Icon-check--active'}`}
             onClick={props.onCompleted}
             >
