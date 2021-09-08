@@ -18,10 +18,14 @@ const AppUI = () => {
     <React.Fragment>  
         <TodoCounter />
         <TodoSearch  /> 
-        
+            
+
+
             <TodoList>
+            <div className="loaderContent">
+                {loading && <div className="lds-spinner"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>}
+            </div>
             {error && <p>hubo un error</p>}
-            {loading && <p>Estamos cargando</p>}
             {(!loading && !searchTodos.length) && <p>Crea tu primer Todo</p>}
             
             {searchTodos.map(todo => (

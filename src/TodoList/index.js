@@ -2,13 +2,13 @@ import React from 'react'
 import './TodoList.css'
  const TodoList = (props) => {
     return (
-        <div>
-            <section>
+        
+            <section className="todolist">
                 <ul>
                     {props.children}
                 </ul>
             </section>
-        </div>
+        
     )
 }
 export {TodoList}
